@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support OV - Plataforma de Asistencia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login/Register Page -->
+        <div id="auth-page" class="page active">
+            <div class="auth-container">
+                <h1>Support OV</h1>
+                <p class="subtitle">Plataforma de Asistencia Psicológica y Vocacional</p>
+                
+                <div class="auth-tabs">
+                    <button class="tab-btn active" onclick="showAuthTab('login')">Iniciar Sesión</button>
+                    <button class="tab-btn" onclick="showAuthTab('register')">Registrarse</button>
+                </div>
+                
+                <!-- Login Form -->
+                <div id="login-form" class="auth-form active">
+                    <h2>Iniciar Sesión</h2>
+                    <form onsubmit="handleLogin(event)">
+                        <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                        <input type="password" id="login-password" placeholder="Contraseña" required>
+                        <button type="submit">Ingresar</button>
+                    </form>
+                    <div id="login-error" class="error-message"></div>
+                </div>
+                
+                <!-- Register Form -->
+                <div id="register-form" class="auth-form">
+                    <h2>Crear Cuenta</h2>
+                    <form onsubmit="handleRegister(event)">
+                        <input type="text" id="reg-fullname" placeholder="Nombre completo" required>
+                        <input type="email" id="reg-email" placeholder="Correo electrónico" required>
+                        <input type="password" id="reg-password" placeholder="Contraseña" required>
+                        <input type="date" id="reg-birthdate" placeholder="Fecha de nacimiento" required>
+                        <select id="reg-gender" required>
+                            <option value="">Selecciona género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="no_binario">No binario</option>
+                            <option value="prefiero_no_decir">Prefiero no decir</option>
+                        </select>
+                        <input type="text" id="reg-state" placeholder="Estado" required>
+                        <input type="tel" id="reg-phone" placeholder="Teléfono (opcional)">
+                        <button type="submit">Registrarse</button>
+                    </form>
+                    <div id="register-error" class="error-message"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Dashboard Page -->
+        <div id="dashboard-page" class="page">
+            <nav class="navbar">
+                <h1>Support OV</h1>
+                <div class="nav-right">
+                    <span id="user-name"></span>
+                    <button onclick="logout()">Cerrar Sesión</button>
+                </div>
+            </nav>
+            
+            <div class="dashboard-container">
+                <h2>Panel Principal</h2>
+                <div class="cards-grid">
+                    <div class="card" onclick="showPage('psychological-chat-page')">
+                        <h3>💬 Chat Psicológico</h3>
+                        <p>Recibe apoyo emocional y orientación psicológica</p>
+                    </div>
+                    <div class="card" onclick="showPage('vocational-chat-page')">
+                        <h3>🎓 Orientación Vocacional</h3>
+                        <p>Descubre tu vocación y opciones de carrera</p>
+                    </div>
+                    <div class="card" onclick="showPage('exam-page')">
+                        <h3>📝 Examen de Simulación</h3>
+                        <p>Practica con examen de admisión universitaria</p>
+                    </div>
+                    <div class="card" onclick="showPage('results-page')">
+                        <h3>📊 Mis Resultados</h3>
+                        <p>Revisa tus resultados de exámenes anteriores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Psychological Chat Page -->
+        <div id="psychological-chat-page" class="page">
+            <nav class="navbar">
+                <button onclick="showPage('dashboard-page')">← Volver</button>
+                <h1>Chat Psicológico</h1>
+                <button onclick="logout()">Cerrar Sesión</button>
+            </nav>
+            
+            <div class="chat-container">
+                <div id="psych-messages" class="messages-container"></div>
+                <div class="input-container">
+                    <textarea id="psych-input" placeholder="Escribe tu mensaje..." rows="3"></textarea>
+                    <button onclick="sendMessage('psychological')">Enviar</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vocational Chat Page -->
+        <div id="vocational-chat-page" class="page">
+            <nav class="navbar">
+                <button onclick="showPage('dashboard-page')">← Volver</button>
+                <h1>Orientación Vocacional</h1>
+                <button onclick="logout()">Cerrar Sesión</button>
+            </nav>
+            
+            <div class="chat-container">
+                <div id="vocational-messages" class="messages-container"></div>
+                <div class="input-container">
+                    <textarea id="vocational-input" placeholder="Escribe tu mensaje..." rows="3"></textarea>
+                    <button onclick="sendMessage('vocational')">Enviar</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Exam Page -->
+        <div id="exam-page" class="page">
+            <nav class="navbar">
+                <button onclick="showPage('dashboard-page')">← Volver</button>
+                <h1>Examen de Simulación</h1>
+                <button onclick="logout()">Cerrar Sesión</button>
+            </nav>
+            
+            <div class="exam-container">
+                <div id="exam-content">
+                    <div class="exam-intro">
+                        <h2>Examen de Admisión Universitaria</h2>
+                        <p>Este examen contiene 120 preguntas divididas en secciones de Español, Matemáticas, Ciencias Naturales y Ciencias Sociales.</p>
+                        <p><strong>Instrucciones:</strong></p>
+                        <ul>
+                            <li>Lee cada pregunta cuidadosamente</li>
+                            <li>Selecciona la respuesta que consideres correcta</li>
+                            <li>Puedes navegar entre preguntas</li>
+                            <li>Al finalizar, presiona "Enviar Examen"</li>
+                        </ul>
+                        <button onclick="startExam()" class="btn-primary">Comenzar Examen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Results Page -->
+        <div id="results-page" class="page">
+            <nav class="navbar">
+                <button onclick="showPage('dashboard-page')">← Volver</button>
+                <h1>Mis Resultados</h1>
+                <button onclick="logout()">Cerrar Sesión</button>
+            </nav>
+            
+            <div class="results-container">
+                <h2>Resultados de Exámenes</h2>
+                <div id="results-list"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

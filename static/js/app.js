@@ -255,10 +255,8 @@ async function startExam() {
     }
 }
 
-function displayQuestion() {
-    const examContent = document.getElementById('exam-content');
-    
-    // Flatten all questions from all sections
+// Helper function to get all questions from all sections
+function getAllQuestions() {
     const allQuestions = [];
     const sections = examData.secciones;
     
@@ -268,6 +266,23 @@ function displayQuestion() {
         });
     }
     
+    return allQuestions;
+}
+
+// Helper function to save current answer
+function saveCurrentAnswer(allQuestions) {
+    const selected = document.querySelector('input[name="answer"]:checked');
+    if (selected) {
+        const currentQuestion = allQuestions[currentQuestionIndex];
+        userAnswers[currentQuestion.id] = selected.value;
+    }
+}
+
+function displayQuestion() {
+    const examContent = document.getElementById('exam-content');
+    
+    // Get all questions
+    const allQuestions = getAllQuestions();
     const question = allQuestions[currentQuestionIndex];
     const totalQuestions = allQuestions.length;
     const progress = Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100);
@@ -305,24 +320,11 @@ function displayQuestion() {
 }
 
 function saveAndNext() {
-    // Save current answer
-    const selected = document.querySelector('input[name="answer"]:checked');
+    // Get all questions and save current answer
+    const allQuestions = getAllQuestions();
+    saveCurrentAnswer(allQuestions);
     
-    if (selected) {
-        const allQuestions = [];
-        const sections = examData.secciones;
-        
-        for (const sectionName in sections) {
-            sections[sectionName].forEach(q => {
-                allQuestions.push({ ...q, section: sectionName });
-            });
-        }
-        
-        const currentQuestion = allQuestions[currentQuestionIndex];
-        userAnswers[currentQuestion.id] = selected.value;
-    }
-    
-    const totalQuestions = Object.values(examData.secciones).reduce((sum, q) => sum + q.length, 0);
+    const totalQuestions = allQuestions.length;
     
     if (currentQuestionIndex === totalQuestions - 1) {
         submitExam();
@@ -334,21 +336,9 @@ function saveAndNext() {
 
 function previousQuestion() {
     if (currentQuestionIndex > 0) {
-        // Save current answer first
-        const selected = document.querySelector('input[name="answer"]:checked');
-        if (selected) {
-            const allQuestions = [];
-            const sections = examData.secciones;
-            
-            for (const sectionName in sections) {
-                sections[sectionName].forEach(q => {
-                    allQuestions.push({ ...q, section: sectionName });
-                });
-            }
-            
-            const currentQuestion = allQuestions[currentQuestionIndex];
-            userAnswers[currentQuestion.id] = selected.value;
-        }
+        // Get all questions and save current answer
+        const allQuestions = getAllQuestions();
+        saveCurrentAnswer(allQuestions);
         
         currentQuestionIndex--;
         displayQuestion();
@@ -481,12 +471,14 @@ async function loadResults() {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
         const activeInput = document.activeElement;
-        if (activeInput.id === 'psych-input') {
-            e.preventDefault();
-            sendMessage('psychological');
-        } else if (activeInput.id === 'vocational-input') {
-            e.preventDefault();
-            sendMessage('vocational');
+        if (activeInput.tagName === 'TEXTAREA') {
+            if (activeInput.id === 'psych-input') {
+                e.preventDefault();
+                sendMessage('psychological');
+            } else if (activeInput.id === 'vocational-input') {
+                e.preventDefault();
+                sendMessage('vocational');
+            }
         }
     }
 });

@@ -12,16 +12,23 @@ CORS(app)
 # Load configuration from Keys.txt
 def load_config():
     config = {}
-    with open('Keys.txt', 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-        for line in lines:
-            if 'DB URL:' in line:
-                config['supabase_url'] = line.split('DB URL:')[1].strip()
-            elif 'anon:' in line:
-                config['supabase_key'] = line.split('anon:')[1].strip()
-            elif 'SUPABASE_SERVICE_ROLE_KEY' in line:
-                # Service role key should be set as environment variable
-                config['service_role_key'] = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '')
+    try:
+        with open('Keys.txt', 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+            for line in lines:
+                if 'DB URL:' in line:
+                    config['supabase_url'] = line.split('DB URL:')[1].strip()
+                elif 'anon:' in line:
+                    config['supabase_key'] = line.split('anon:')[1].strip()
+                elif 'SUPABASE_SERVICE_ROLE_KEY' in line:
+                    # Service role key should be set as environment variable
+                    config['service_role_key'] = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '')
+    except FileNotFoundError:
+        print("Error: Keys.txt file not found. Please ensure the file exists in the project root.")
+        raise
+    except Exception as e:
+        print(f"Error reading Keys.txt: {e}")
+        raise
     return config
 
 config = load_config()
@@ -36,8 +43,15 @@ else:
     model = None
 
 # Load questions from Preguntas.json
-with open('Preguntas.json', 'r', encoding='utf-8') as f:
-    questions_data = json.load(f)
+try:
+    with open('Preguntas.json', 'r', encoding='utf-8') as f:
+        questions_data = json.load(f)
+except FileNotFoundError:
+    print("Error: Preguntas.json file not found. Please ensure the file exists in the project root.")
+    raise
+except json.JSONDecodeError as e:
+    print(f"Error: Preguntas.json contains invalid JSON: {e}")
+    raise
 
 @app.route('/')
 def index():
@@ -135,7 +149,7 @@ def psychological_chat():
             .select('*')\
             .eq('user_id', user_id)\
             .order('created_at', desc=False)\
-            .limit(10)\
+            .limit(5)\
             .execute()
         
         # Build context from history
@@ -144,7 +158,7 @@ def psychological_chat():
         
         if history.data:
             context += "Historial de conversación:\n"
-            for msg in history.data[-5:]:  # Last 5 messages for context
+            for msg in history.data:  # Use all fetched messages for context
                 role = "Usuario" if msg['role'] == 'user' else "Psicólogo"
                 context += f"{role}: {msg['message']}\n"
         
@@ -192,7 +206,7 @@ def vocational_chat():
             .select('*')\
             .eq('user_id', user_id)\
             .order('created_at', desc=False)\
-            .limit(10)\
+            .limit(5)\
             .execute()
         
         # Get user profile for personalized advice
@@ -215,7 +229,7 @@ def vocational_chat():
         
         if history.data:
             context += "Historial de conversación:\n"
-            for msg in history.data[-5:]:  # Last 5 messages for context
+            for msg in history.data:  # Use all fetched messages for context
                 role = "Usuario" if msg['role'] == 'user' else "Orientador"
                 context += f"{role}: {msg['message']}\n"
         
@@ -304,8 +318,9 @@ def submit_exam():
         for section_name, questions in sections.items():
             section_score = 0
             for question in questions:
-                q_id = str(question['id'])
-                if q_id in answers and answers[q_id] == question['respuesta_correcta']:
+                q_id = str(question.get('id', ''))
+                correct_answer = question.get('respuesta_correcta', '')
+                if q_id and correct_answer and q_id in answers and answers[q_id] == correct_answer:
                     section_score += 1
                     total_correct += 1
                 total_questions += 1

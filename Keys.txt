@@ -1,0 +1,5 @@
+Variables: 
+DB URL: https://gqxxnbfkzybbxmxcpcmq.supabase.co 
+anon: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxeHhuYmZrenliYnhteGNwY21xIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA2MDM1ODEsImV4cCI6MjA4NjE3OTU4MX0.F84DcR660GCGNlKM2SOx7hehwZI3FuQsK4fJ64bGVQQ 
+Gemini: https://gqxxnbfkzybbxmxcpcmq.supabase.co/functions/v1/cpalead
+Service role(Environment var): SUPABASE_SERVICE_ROLE_KEY

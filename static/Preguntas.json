@@ -1,0 +1,1332 @@
+{
+  "examen": "Simulacro de Admisión Universitaria",
+  "total_preguntas": 120,
+  "secciones": {
+    "espanol": [
+      {
+        "id": 1,
+        "pregunta": "¿Cuál es la función principal de un adverbio?",
+        "opciones": {
+          "a": "Modificar al sustantivo",
+          "b": "Modificar al verbo, al adjetivo o a otro adverbio",
+          "c": "Unir oraciones",
+          "d": "Sustituir al sujeto"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 2,
+        "pregunta": "¿En qué opción se utiliza correctamente el punto y coma?",
+        "opciones": {
+          "a": "Llegamos tarde; por el tráfico.",
+          "b": "Compramos manzanas; peras; y plátanos.",
+          "c": "Terminó el informe; sin embargo, no lo entregó.",
+          "d": "El niño corre; juega; y salta."
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 3,
+        "pregunta": "Identifica la oración que presenta un barbarismo:",
+        "opciones": {
+          "a": "Voy a ir al cine.",
+          "b": "Haiga sido por tu bien.",
+          "c": "Mañana te llamo.",
+          "d": "Ese coche es rápido."
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 4,
+        "pregunta": "¿Cuál es el núcleo del sujeto en la oración: 'Los libros de historia estaban en el anaquel'?",
+        "opciones": {
+          "a": "historia",
+          "b": "anaquel",
+          "c": "libros",
+          "d": "estaban"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 5,
+        "pregunta": "Selecciona la opción donde todas las palabras estén escritas correctamente:",
+        "opciones": {
+          "a": "Exhuberante, exámen, excento",
+          "b": "Exuberante, examen, exento",
+          "c": "Exuberante, exámen, excento",
+          "d": "Exhuberante, examen, exento"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 6,
+        "pregunta": "¿Qué figura literaria predomina en el siguiente verso: 'Tus ojos son dos luceros'?",
+        "opciones": {
+          "a": "Metonimia",
+          "b": "Hipérbole",
+          "c": "Metáfora",
+          "d": "Símil"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 7,
+        "pregunta": "¿En qué tiempo verbal está conjugado 'había cantado'?",
+        "opciones": {
+          "a": "Pretérito pluscuamperfecto",
+          "b": "Condicional compuesto",
+          "c": "Pretérito perfecto simple",
+          "d": "Futuro perfecto"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 8,
+        "pregunta": "Selecciona la opción que contiene un diptongo:",
+        "opciones": {
+          "a": "Ma-íz",
+          "b": "A-é-re-o",
+          "c": "Ciu-dad",
+          "d": "Ca-í-da"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 9,
+        "pregunta": "¿Cuál es la función de la lengua que predomina en un texto científico?",
+        "opciones": {
+          "a": "Apelativa",
+          "b": "Fática",
+          "c": "Poética",
+          "d": "Referencial"
+        },
+        "respuesta_correcta": "d"
+      },
+      {
+        "id": 10,
+        "pregunta": "Oración compuesta coordinada:",
+        "opciones": {
+          "a": "El coche que compré es nuevo.",
+          "b": "Juan estudia y María trabaja.",
+          "c": "Dijo que vendría tarde.",
+          "d": "Salió cuando empezó a llover."
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 11,
+        "pregunta": "¿Qué palabra es un adverbio de tiempo?",
+        "opciones": {
+          "a": "Lejos",
+          "b": "Pronto",
+          "c": "Así",
+          "d": "Poco"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 12,
+        "pregunta": "¿En qué opción se usa correctamente la 'b'?",
+        "opciones": {
+          "a": "Barios, yerva, jirafa",
+          "b": "Vidente, bendito, bíceps",
+          "c": "Vaso, balón, vello",
+          "d": "Bien, bueno, vienes (de venir)"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 13,
+        "pregunta": "¿Qué es un neologismo?",
+        "opciones": {
+          "a": "Una palabra antigua en desuso",
+          "b": "Un término nuevo incorporado a la lengua",
+          "c": "Un error gramatical",
+          "d": "Un regionalismo"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 14,
+        "pregunta": "En la frase 'Egresados de la UNAM', ¿qué tipo de complemento es 'de la UNAM'?",
+        "opciones": {
+          "a": "Complemento directo",
+          "b": "Complemento agente",
+          "c": "Complemento del nombre",
+          "d": "Complemento circunstancial"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 15,
+        "pregunta": "Autor de 'El llano en llamas':",
+        "opciones": {
+          "a": "Octavio Paz",
+          "b": "Carlos Fuentes",
+          "c": "Juan Rulfo",
+          "d": "Gabriel García Márquez"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 16,
+        "pregunta": "¿Cuál es el antónimo de 'benévolo'?",
+        "opciones": {
+          "a": "Altruista",
+          "b": "Malévolo",
+          "c": "Filántropo",
+          "d": "Compasivo"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 17,
+        "pregunta": "¿Dónde lleva acento la palabra 'examen'?",
+        "opciones": {
+          "a": "En la e (éxamen)",
+          "b": "En la a (exámen)",
+          "c": "No lleva acento",
+          "d": "En la e y en la a"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 18,
+        "pregunta": "¿Qué es un verbo irregular?",
+        "opciones": {
+          "a": "El que no sigue el paradigma de conjugación estándar",
+          "b": "El que termina en -ar, -er, -ir",
+          "c": "El que está en infinitivo",
+          "d": "El que no tiene sujeto"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 19,
+        "pregunta": "Sinónimo de 'idiosincrasia':",
+        "opciones": {
+          "a": "Enfermedad",
+          "b": "Temperamento",
+          "c": "Cultura",
+          "d": "Forma de ser"
+        },
+        "respuesta_correcta": "d"
+      },
+      {
+        "id": 20,
+        "pregunta": "Oración con error de concordancia:",
+        "opciones": {
+          "a": "Hubo muchos accidentes.",
+          "b": "Habían muchas personas.",
+          "c": "Hubo muchas personas.",
+          "d": "Hay muchas opciones."
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 21,
+        "pregunta": "¿Cuál es el objetivo de un ensayo?",
+        "opciones": {
+          "a": "Narrar una historia ficticia",
+          "b": "Expresar el punto de vista del autor sobre un tema",
+          "c": "Presentar datos duros sin opinión",
+          "d": "Entrevistar a un personaje"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 22,
+        "pregunta": "¿Qué tipo de texto es una receta de cocina?",
+        "opciones": {
+          "a": "Descriptivo",
+          "b": "Argumentativo",
+          "c": "Instructivo",
+          "d": "Narrativo"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 23,
+        "pregunta": "¿Qué opción presenta un hiato?",
+        "opciones": {
+          "a": "Reunión",
+          "b": "Causa",
+          "c": "Piano",
+          "d": "Leer"
+        },
+        "respuesta_correcta": "d"
+      },
+      {
+        "id": 24,
+        "pregunta": "Oración subordinada sustantiva:",
+        "opciones": {
+          "a": "El libro que leí está interesante.",
+          "b": "Iré cuando termines.",
+          "c": "Me alegra que hayas venido.",
+          "d": "Caminaba despacio, aunque llovía."
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 25,
+        "pregunta": "¿Cuál es la sílaba tónica de 'caracteres'?",
+        "opciones": {
+          "a": "ca",
+          "b": "rac",
+          "c": "te",
+          "d": "res"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 26,
+        "pregunta": "¿Qué es un pleonasmo?",
+        "opciones": {
+          "a": "Falta de vocabulario",
+          "b": "Repetición innecesaria de palabras",
+          "c": "Figura literaria de comparación",
+          "d": "Un tipo de rima"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 27,
+        "pregunta": "¿En qué modo verbal se expresa una orden?",
+        "opciones": {
+          "a": "Indicativo",
+          "b": "Subjuntivo",
+          "c": "Imperativo",
+          "d": "Condicional"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 28,
+        "pregunta": "¿Qué es un extranjerismo?",
+        "opciones": {
+          "a": "Una palabra de otro idioma usada en español",
+          "b": "Un dialecto regional",
+          "c": "Un error de ortografía",
+          "d": "Un sinónimo"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 29,
+        "pregunta": "Función de la lengua que se usa para iniciar una conversación:",
+        "opciones": {
+          "a": "Metalingüística",
+          "b": "Emotiva",
+          "c": "Fática",
+          "d": "Poética"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 30,
+        "pregunta": "¿Cuál es el género literario de 'La Odisea'?",
+        "opciones": {
+          "a": "Lírico",
+          "b": "Dramático",
+          "c": "Épico",
+          "d": "Didáctico"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 31,
+        "pregunta": "Conector de causa:",
+        "opciones": {
+          "a": "Sin embargo",
+          "b": "Por lo tanto",
+          "c": "Debido a que",
+          "d": "Además"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 32,
+        "pregunta": "Oración con sujeto tácito:",
+        "opciones": {
+          "a": "Juan come manzanas.",
+          "b": "Llegaron temprano a la escuela.",
+          "c": "Ella es muy alta.",
+          "d": "El perro ladra fuerte."
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 33,
+        "pregunta": "¿Qué palabra es un sustantivo abstracto?",
+        "opciones": {
+          "a": "Mesa",
+          "b": "Perro",
+          "c": "Belleza",
+          "d": "Río"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 34,
+        "pregunta": "¿Para qué sirven los signos de interrogación?",
+        "opciones": {
+          "a": "Para expresar sorpresa",
+          "b": "Para indicar una pausa larga",
+          "c": "Para delimitar una pregunta",
+          "d": "Para citar a alguien"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 35,
+        "pregunta": "Homófono de 'tuvo' (del verbo tener):",
+        "opciones": {
+          "a": "Tubo",
+          "b": "Tuvo",
+          "c": "Tubo (de cañería)",
+          "d": "Tubó"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 36,
+        "pregunta": "¿Qué es una jerga?",
+        "opciones": {
+          "a": "Lengua oficial de un país",
+          "b": "Lenguaje técnico usado por un grupo específico",
+          "c": "Un error gramatical",
+          "d": "Un tipo de acento"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 37,
+        "pregunta": "¿Quién escribió 'Cien años de soledad'?",
+        "opciones": {
+          "a": "Mario Vargas Llosa",
+          "b": "Jorge Luis Borges",
+          "c": "Julio Cortázar",
+          "d": "Gabriel García Márquez"
+        },
+        "respuesta_correcta": "d"
+      },
+      {
+        "id": 38,
+        "pregunta": "¿Qué palabra se escribe con 'g'?",
+        "opciones": {
+          "a": "__irafa",
+          "b": "__irasol",
+          "c": "__itano",
+          "d": "__elatina"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 39,
+        "pregunta": "Complemento circunstancial de instrumento:",
+        "opciones": {
+          "a": "Escribió con una pluma.",
+          "b": "Viajó a París.",
+          "c": "Llegó por la mañana.",
+          "d": "Lo hizo rápidamente."
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 40,
+        "pregunta": "Oración compuesta subordinada adjetiva:",
+        "opciones": {
+          "a": "Dijo que vendría.",
+          "b": "La casa que compramos es grande.",
+          "c": "Iremos si hace sol.",
+          "d": "Come y calla."
+        },
+        "respuesta_correcta": "b"
+      }
+    ],
+    "matematicas": [
+      {
+        "id": 41,
+        "pregunta": "Resultado de: (3/4) ÷ (2/5)",
+        "opciones": {
+          "a": "6/20",
+          "b": "15/8",
+          "c": "8/15",
+          "d": "5/9"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 42,
+        "pregunta": "Si x + 5 = 12, ¿cuánto vale x?",
+        "opciones": {
+          "a": "5",
+          "b": "6",
+          "c": "7",
+          "d": "8"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 43,
+        "pregunta": "¿Cuál es el valor de la pendiente de la recta y = 3x + 2?",
+        "opciones": {
+          "a": "2",
+          "b": "3",
+          "c": "3/2",
+          "d": "-3"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 44,
+        "pregunta": "Factoriza: x² - 9",
+        "opciones": {
+          "a": "(x - 3)²",
+          "b": "(x + 3)(x - 3)",
+          "c": "(x + 9)(x - 1)",
+          "d": "x(x - 9)"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 45,
+        "pregunta": "¿Cuánto mide la hipotenusa de un triángulo rectángulo con catetos de 3 y 4?",
+        "opciones": {
+          "a": "5",
+          "b": "6",
+          "c": "7",
+          "d": "12"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 46,
+        "pregunta": "Área de un círculo de radio 7 cm (considera π=22/7):",
+        "opciones": {
+          "a": "44 cm²",
+          "b": "154 cm²",
+          "c": "308 cm²",
+          "d": "49 cm²"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 47,
+        "pregunta": "Resuelve: 2(3x - 1) = 10",
+        "opciones": {
+          "a": "x = 1",
+          "b": "x = 2",
+          "c": "x = 3",
+          "d": "x = 4"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 48,
+        "pregunta": "¿Cuál es el mínimo común múltiplo de 6 y 8?",
+        "opciones": {
+          "a": "12",
+          "b": "16",
+          "c": "24",
+          "d": "48"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 49,
+        "pregunta": "Si un ángulo mide 35°, ¿cuánto mide su complemento?",
+        "opciones": {
+          "a": "35°",
+          "b": "55°",
+          "c": "145°",
+          "d": "125°"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 50,
+        "pregunta": "¿Cuántas caras tiene un cubo?",
+        "opciones": {
+          "a": "4",
+          "b": "6",
+          "c": "8",
+          "d": "12"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 51,
+        "pregunta": "Resultado de (-3) × (-4) × (-2):",
+        "opciones": {
+          "a": "24",
+          "b": "-24",
+          "c": "9",
+          "d": "-9"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 52,
+        "pregunta": "Simplifica: (a³)²",
+        "opciones": {
+          "a": "a⁵",
+          "b": "a⁶",
+          "c": "a⁹",
+          "d": "a"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 53,
+        "pregunta": "La raíz cuadrada de 144 es:",
+        "opciones": {
+          "a": "11",
+          "b": "12",
+          "c": "13",
+          "d": "14"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 54,
+        "pregunta": "¿Qué tipo de triángulo tiene todos sus lados diferentes?",
+        "opciones": {
+          "a": "Equilátero",
+          "b": "Isósceles",
+          "c": "Escaleno",
+          "d": "Rectángulo"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 55,
+        "pregunta": "Resuelve: log₂ 8 = ?",
+        "opciones": {
+          "a": "2",
+          "b": "3",
+          "c": "4",
+          "d": "16"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 56,
+        "pregunta": "Perímetro de un cuadrado de lado 5 cm:",
+        "opciones": {
+          "a": "10 cm",
+          "b": "15 cm",
+          "c": "20 cm",
+          "d": "25 cm"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 57,
+        "pregunta": "¿Cuál es el valor de π (pi) aproximado?",
+        "opciones": {
+          "a": "2.14",
+          "b": "3.14",
+          "c": "4.14",
+          "d": "1.14"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 58,
+        "pregunta": "Resuelve: 5! (factorial de 5)",
+        "opciones": {
+          "a": "25",
+          "b": "60",
+          "c": "120",
+          "d": "15"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 59,
+        "pregunta": "En la ecuación y = mx + b, ¿qué representa 'b'?",
+        "opciones": {
+          "a": "La pendiente",
+          "b": "La ordenada al origen",
+          "c": "La variable independiente",
+          "d": "La raíz"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 60,
+        "pregunta": "Un número decimal periódico puro es:",
+        "opciones": {
+          "a": "0.5",
+          "b": "0.333...",
+          "c": "0.25",
+          "d": "0.75"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 61,
+        "pregunta": "¿Cuál es la probabilidad de obtener un 3 al lanzar un dado?",
+        "opciones": {
+          "a": "1/2",
+          "b": "1/3",
+          "c": "1/6",
+          "d": "1/4"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 62,
+        "pregunta": "Ángulo mayor a 90° y menor a 180°:",
+        "opciones": {
+          "a": "Agudo",
+          "b": "Recto",
+          "c": "Obtuso",
+          "d": "Llano"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 63,
+        "pregunta": "Resultado de (x + 2)²:",
+        "opciones": {
+          "a": "x² + 4",
+          "b": "x² + 4x + 4",
+          "c": "x² + 2x + 4",
+          "d": "2x + 4"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 64,
+        "pregunta": "¿Cuánto es el 20% de 150?",
+        "opciones": {
+          "a": "15",
+          "b": "20",
+          "c": "30",
+          "d": "40"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 65,
+        "pregunta": "Si un ángulo es de 30°, ¿cuánto mide su suplemento?",
+        "opciones": {
+          "a": "60°",
+          "b": "150°",
+          "c": "180°",
+          "d": "90°"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 66,
+        "pregunta": "¿Qué número es primo?",
+        "opciones": {
+          "a": "21",
+          "b": "33",
+          "c": "41",
+          "d": "49"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 67,
+        "pregunta": "Volumen de un cubo de arista 3 m:",
+        "opciones": {
+          "a": "9 m³",
+          "b": "18 m³",
+          "c": "27 m³",
+          "d": "36 m³"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 68,
+        "pregunta": "Resuelve: 3x - 7 = 2x + 1",
+        "opciones": {
+          "a": "x = 6",
+          "b": "x = 7",
+          "c": "x = 8",
+          "d": "x = 9"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 69,
+        "pregunta": "En notación científica, 0.0005 se escribe:",
+        "opciones": {
+          "a": "5 x 10⁻³",
+          "b": "5 x 10⁻⁴",
+          "c": "5 x 10⁴",
+          "d": "0.5 x 10⁻³"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 70,
+        "pregunta": "¿Cuál es la fórmula del área de un triángulo?",
+        "opciones": {
+          "a": "Lado x Lado",
+          "b": "(b x h)/2",
+          "c": "π r²",
+          "d": "b x h"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 71,
+        "pregunta": "¿Cuántos lados tiene un hexágono?",
+        "opciones": {
+          "a": "5",
+          "b": "6",
+          "c": "7",
+          "d": "8"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 72,
+        "pregunta": "Media aritmética de 4, 6 y 8:",
+        "opciones": {
+          "a": "4",
+          "b": "5",
+          "c": "6",
+          "d": "7"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 73,
+        "pregunta": "¿Cuál es el resultado de 10 - 3 × 2?",
+        "opciones": {
+          "a": "14",
+          "b": "4",
+          "c": "7",
+          "d": "5"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 74,
+        "pregunta": "Símbolo de los números naturales:",
+        "opciones": {
+          "a": "Z",
+          "b": "Q",
+          "c": "N",
+          "d": "R"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 75,
+        "pregunta": "Resuelve: 2/3 + 1/2",
+        "opciones": {
+          "a": "3/5",
+          "b": "4/6",
+          "c": "7/6",
+          "d": "5/5"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 76,
+        "pregunta": "La derivada de f(x) = 5x es:",
+        "opciones": {
+          "a": "0",
+          "b": "5",
+          "c": "5x",
+          "d": "x"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 77,
+        "pregunta": "¿Cuál es el máximo común divisor de 18 y 24?",
+        "opciones": {
+          "a": "3",
+          "b": "4",
+          "c": "6",
+          "d": "8"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 78,
+        "pregunta": "Resuelve la ecuación cuadrática: x² - 5x + 6 = 0",
+        "opciones": {
+          "a": "x = 2, 3",
+          "b": "x = -2, -3",
+          "c": "x = 1, 6",
+          "d": "x = -1, 6"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 79,
+        "pregunta": "Un número irracional es:",
+        "opciones": {
+          "a": "1/3",
+          "b": "√2",
+          "c": "0.5",
+          "d": "-5"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 80,
+        "pregunta": "¿Cuántos radianes son 180°?",
+        "opciones": {
+          "a": "π/2",
+          "b": "π",
+          "c": "2π",
+          "d": "3π/2"
+        },
+        "respuesta_correcta": "b"
+      }
+    ],
+    "generales": [
+      {
+        "id": 81,
+        "pregunta": "Año del descubrimiento de América:",
+        "opciones": {
+          "a": "1492",
+          "b": "1810",
+          "c": "1519",
+          "d": "1521"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 82,
+        "pregunta": "Órgano encargado de bombear la sangre:",
+        "opciones": {
+          "a": "Pulmones",
+          "b": "Hígado",
+          "c": "Corazón",
+          "d": "Riñones"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 83,
+        "pregunta": "Capas de la Tierra:",
+        "opciones": {
+          "a": "Corteza, manto y núcleo",
+          "b": "Litosfera, hidrosfera y atmósfera",
+          "c": "Troposfera, estratosfera y mesosfera",
+          "d": "Océanos, continentes y aire"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 84,
+        "pregunta": "Fórmula del agua:",
+        "opciones": {
+          "a": "CO2",
+          "b": "H2O",
+          "c": "O2",
+          "d": "NaCl"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 85,
+        "pregunta": "Río más largo del mundo:",
+        "opciones": {
+          "a": "Nilo",
+          "b": "Amazonas",
+          "c": "Yangtsé",
+          "d": "Misisipi"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 86,
+        "pregunta": "Proceso por el cual las plantas fabrican su alimento:",
+        "opciones": {
+          "a": "Digestión",
+          "b": "Fotosíntesis",
+          "c": "Respiración",
+          "d": "Fermentación"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 87,
+        "pregunta": "¿Quién pintó 'La última cena'?",
+        "opciones": {
+          "a": "Miguel Ángel",
+          "b": "Picasso",
+          "c": "Leonardo da Vinci",
+          "d": "Van Gogh"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 88,
+        "pregunta": "Partícula subatómica con carga positiva:",
+        "opciones": {
+          "a": "Electrón",
+          "b": "Neutrón",
+          "c": "Protón",
+          "d": "Fotón"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 89,
+        "pregunta": "Año del inicio de la Independencia de México:",
+        "opciones": {
+          "a": "1808",
+          "b": "1810",
+          "c": "1821",
+          "d": "1910"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 90,
+        "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+        "opciones": {
+          "a": "Tierra",
+          "b": "Marte",
+          "c": "Júpiter",
+          "d": "Saturno"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 91,
+        "pregunta": "Hueso más largo del cuerpo humano:",
+        "opciones": {
+          "a": "Húmero",
+          "b": "Fémur",
+          "c": "Tibia",
+          "d": "Cúbito"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 92,
+        "pregunta": "Capital de Francia:",
+        "opciones": {
+          "a": "Londres",
+          "b": "Roma",
+          "c": "París",
+          "d": "Berlín"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 93,
+        "pregunta": "Gas que más abunda en la atmósfera:",
+        "opciones": {
+          "a": "Oxígeno",
+          "b": "Dióxido de carbono",
+          "c": "Nitrógeno",
+          "d": "Hidrógeno"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 94,
+        "pregunta": "Etapa de la historia que siguió a la Edad Media:",
+        "opciones": {
+          "a": "Edad Moderna",
+          "b": "Edad Antigua",
+          "c": "Edad Contemporánea",
+          "d": "Renacimiento"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 95,
+        "pregunta": "¿Qué mide el sismógrafo?",
+        "opciones": {
+          "a": "La presión atmosférica",
+          "b": "La temperatura",
+          "c": "Los movimientos telúricos",
+          "d": "La velocidad del viento"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 96,
+        "pregunta": "Padre de la psicología:",
+        "opciones": {
+          "a": "Freud",
+          "b": "Piaget",
+          "c": "Pavlov",
+          "d": "Maslow"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 97,
+        "pregunta": "Océano que baña las costas de Chile:",
+        "opciones": {
+          "a": "Atlántico",
+          "b": "Índico",
+          "c": "Pacífico",
+          "d": "Ártico"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 98,
+        "pregunta": "Energía que se obtiene del sol:",
+        "opciones": {
+          "a": "Eólica",
+          "b": "Hidráulica",
+          "c": "Solar",
+          "d": "Nuclear"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 99,
+        "pregunta": "¿Quién fue el primer presidente de México?",
+        "opciones": {
+          "a": "Benito Juárez",
+          "b": "Porfirio Díaz",
+          "c": "Guadalupe Victoria",
+          "d": "Miguel Hidalgo"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 100,
+        "pregunta": "Unidad básica de la vida:",
+        "opciones": {
+          "a": "Tejido",
+          "b": "Órgano",
+          "c": "Célula",
+          "d": "ADN"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 101,
+        "pregunta": "¿Qué país construyó el Canal de Panamá?",
+        "opciones": {
+          "a": "Francia",
+          "b": "España",
+          "c": "Estados Unidos",
+          "d": "Inglaterra"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 102,
+        "pregunta": "Movimiento de la Tierra alrededor del sol:",
+        "opciones": {
+          "a": "Rotación",
+          "b": "Traslación",
+          "c": "Precesión",
+          "d": "Nutación"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 103,
+        "pregunta": "Filósofo griego, maestro de Alejandro Magno:",
+        "opciones": {
+          "a": "Sócrates",
+          "b": "Platón",
+          "c": "Aristóteles",
+          "d": "Pitágoras"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 104,
+        "pregunta": "¿Qué organo del cuerpo humano produce la insulina?",
+        "opciones": {
+          "a": "Hígado",
+          "b": "Páncreas",
+          "c": "Estómago",
+          "d": "Vesícula"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 105,
+        "pregunta": "Línea imaginaria que divide la Tierra en hemisferio norte y sur:",
+        "opciones": {
+          "a": "Meridiano de Greenwich",
+          "b": "Trópico de Cáncer",
+          "c": "Ecuador",
+          "d": "Trópico de Capricornio"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 106,
+        "pregunta": "Revolución que dio inicio a la Edad Contemporánea:",
+        "opciones": {
+          "a": "Revolución Francesa",
+          "b": "Revolución Industrial",
+          "c": "Revolución Rusa",
+          "d": "Revolución Mexicana"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 107,
+        "pregunta": "¿Qué metal es líquido a temperatura ambiente?",
+        "opciones": {
+          "a": "Hierro",
+          "b": "Aluminio",
+          "c": "Mercurio",
+          "d": "Plomo"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 108,
+        "pregunta": "País con forma de bota:",
+        "opciones": {
+          "a": "España",
+          "b": "Grecia",
+          "c": "Italia",
+          "d": "Portugal"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 109,
+        "pregunta": "Ciencia que estudia los seres vivos:",
+        "opciones": {
+          "a": "Química",
+          "b": "Física",
+          "c": "Biología",
+          "d": "Geología"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 110,
+        "pregunta": "Autor de 'El Quijote de la Mancha':",
+        "opciones": {
+          "a": "Lope de Vega",
+          "b": "Miguel de Cervantes",
+          "c": "Federico García Lorca",
+          "d": "Pablo Neruda"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 111,
+        "pregunta": "¿En qué año llegó el hombre a la luna?",
+        "opciones": {
+          "a": "1965",
+          "b": "1969",
+          "c": "1972",
+          "d": "1958"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 112,
+        "pregunta": "Elemento químico representado como 'O':",
+        "opciones": {
+          "a": "Oro",
+          "b": "Osmio",
+          "c": "Oxígeno",
+          "d": "Oganesón"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 113,
+        "pregunta": "¿Quién desarrolló la teoría de la relatividad?",
+        "opciones": {
+          "a": "Newton",
+          "b": "Galileo",
+          "c": "Einstein",
+          "d": "Hawking"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 114,
+        "pregunta": "México se encuentra en el continente:",
+        "opciones": {
+          "a": "Sudamericano",
+          "b": "Europeo",
+          "c": "Americano",
+          "d": "Africano"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 115,
+        "pregunta": "¿Qué significa ADN?",
+        "opciones": {
+          "a": "Ácido desoxirribonucleico",
+          "b": "Ácido ribonucleico",
+          "c": "Adenosina difosfato",
+          "d": "Adenina dinucleótido"
+        },
+        "respuesta_correcta": "a"
+      },
+      {
+        "id": 116,
+        "pregunta": "Guerra fría: enfrentamiento entre:",
+        "opciones": {
+          "a": "Francia e Inglaterra",
+          "b": "Alemania y Rusia",
+          "c": "EE.UU. y URSS",
+          "d": "China y Japón"
+        },
+        "respuesta_correcta": "c"
+      },
+      {
+        "id": 117,
+        "pregunta": "¿Qué instrumento mide la temperatura?",
+        "opciones": {
+          "a": "Barómetro",
+          "b": "Termómetro",
+          "c": "Higrómetro",
+          "d": "Anemómetro"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 118,
+        "pregunta": "Rey del rock and roll:",
+        "opciones": {
+          "a": "Michael Jackson",
+          "b": "Elvis Presley",
+          "c": "John Lennon",
+          "d": "Freddie Mercury"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 119,
+        "pregunta": "Sustancia que acelera una reacción química:",
+        "opciones": {
+          "a": "Inhibidor",
+          "b": "Catalizador",
+          "c": "Reactivo",
+          "d": "Producto"
+        },
+        "respuesta_correcta": "b"
+      },
+      {
+        "id": 120,
+        "pregunta": "Principal vía respiratoria de los peces:",
+        "opciones": {
+          "a": "Pulmones",
+          "b": "Piel",
+          "c": "Branquias",
+          "d": "Tráquea"
+        },
+        "respuesta_correcta": "c"
+      }
+    ]
+  }
+}

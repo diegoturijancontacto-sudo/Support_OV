@@ -236,7 +236,8 @@ async function sendMessage(chatType) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${currentUser.session}`
+                'Authorization': `Bearer ${currentUser.session}`,
+                "apikey": SUPABASE_ANON_KEY
             },
             body: JSON.stringify({
                 message: message,

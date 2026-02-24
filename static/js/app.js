@@ -5,7 +5,7 @@ let currentQuestionIndex = 0;
 let userAnswers = {};
 
 // API Base URL
-const API_BASE = window.location.origin + '/api';
+const API_BASE = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {

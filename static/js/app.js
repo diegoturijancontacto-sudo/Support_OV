@@ -248,7 +248,7 @@ async function sendMessage(chatType) {
         });
         
         const responseData = await response.json();
-        const assistantMessage = responseData.response || responseData.message || responseData.text ||
+        const assistantMessage = responseData.response || responseData.message || responseData.text || responseData.response ||
             'Lo siento, no pude procesar tu mensaje en este momento.';
         
         // Save assistant response to database

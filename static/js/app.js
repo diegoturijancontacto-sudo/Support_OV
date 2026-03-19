@@ -284,9 +284,7 @@ function appendMessage(chatType, message, role, timestamp = null) {
     const contentDiv = document.createElement('div');
     contentDiv.className = 'message-content';
     const rawHtml = (typeof marked !== 'undefined') ? marked.parse(message) : message;
-    contentDiv.innerHTML = (typeof DOMPurify !== 'undefined')
-        ? DOMPurify.sanitize(rawHtml, { ALLOWED_ATTR: ['class', 'style', 'href', 'src', 'alt', 'title'] })
-        : rawHtml;
+    contentDiv.innerHTML = (typeof DOMPurify !== 'undefined') ? DOMPurify.sanitize(rawHtml) : rawHtml;
 
     const timeDiv = document.createElement('div');
     timeDiv.className = 'message-time';

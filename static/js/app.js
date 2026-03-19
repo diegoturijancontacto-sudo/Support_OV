@@ -284,9 +284,19 @@ function appendMessage(chatType, message, role, timestamp = null) {
     const contentDiv = document.createElement('div');
     contentDiv.className = 'message-content';
     const rawHtml = (typeof marked !== 'undefined') ? marked.parse(message) : message;
-    contentDiv.innerHTML = (typeof DOMPurify !== 'undefined') ? DOMPurify.sanitize(rawHtml) : rawHtml;
+    contentDiv.innerHTML = (typeof DOMPurify !== 'undefined')
+        ? DOMPurify.sanitize(rawHtml, { ALLOWED_ATTR: ['class', 'style', 'href', 'src', 'alt', 'title'] })
+        : rawHtml;
 
-    // Render LaTeX with KaTeX auto-render (runs after KaTeX is loaded)
+    const timeDiv = document.createElement('div');
+    timeDiv.className = 'message-time';
+    timeDiv.textContent = time;
+
+    messageDiv.appendChild(contentDiv);
+    messageDiv.appendChild(timeDiv);
+    messagesDiv.appendChild(messageDiv);
+
+    // Render LaTeX with KaTeX auto-render after element is in the DOM
     if (typeof renderMathInElement !== 'undefined') {
         renderMathInElement(contentDiv, {
             delimiters: [
@@ -299,14 +309,6 @@ function appendMessage(chatType, message, role, timestamp = null) {
         });
     }
 
-    const timeDiv = document.createElement('div');
-    timeDiv.className = 'message-time';
-    timeDiv.textContent = time;
-
-    messageDiv.appendChild(contentDiv);
-    messageDiv.appendChild(timeDiv);
-    
-    messagesDiv.appendChild(messageDiv);
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
 

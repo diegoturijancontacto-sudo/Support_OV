@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support OV - Plataforma de Asistencia</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <!-- Font Awesome 6 Free – MIT licence for code, CC BY 4.0 for icons (self-hosted) -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- KaTeX – MIT licence (self-hosted) -->
+    <link rel="stylesheet" href="css/katex.min.css">
+    <!-- Supabase – MIT licence (self-hosted) -->
+    <script src="js/vendor/supabase.js"></script>
+    <!-- marked.js – MIT licence (self-hosted) -->
+    <script src="js/vendor/marked.min.js"></script>
+    <!-- DOMPurify 3.1.3 – Apache 2.0 / MIT licence (self-hosted) -->
+    <script src="js/vendor/purify.min.js"></script>
+    <script defer src="js/vendor/katex.min.js"></script>
+    <script defer src="js/vendor/auto-render.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -61,7 +72,7 @@
                 <h1>Support OV</h1>
                 <div class="nav-right">
                     <span id="user-name"></span>
-                    <button onclick="logout()">Cerrar Sesión</button>
+                    <button onclick="logout()"><i class="fas fa-sign-out-alt"></i> <span class="btn-text">Cerrar Sesión</span></button>
                 </div>
             </nav>
             
@@ -69,19 +80,23 @@
                 <h2>Panel Principal</h2>
                 <div class="cards-grid">
                     <div class="card" onclick="showPage('psychological-chat-page')">
-                        <h3>💬 Chat Psicológico</h3>
+                        <div class="card-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Chat Psicológico</h3>
                         <p>Recibe apoyo emocional y orientación psicológica</p>
                     </div>
                     <div class="card" onclick="showPage('vocational-chat-page')">
-                        <h3>🎓 Orientación Vocacional</h3>
+                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Orientación Vocacional</h3>
                         <p>Descubre tu vocación y opciones de carrera</p>
                     </div>
                     <div class="card" onclick="showPage('exam-page')">
-                        <h3>📝 Examen de Simulación</h3>
+                        <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Examen de Simulación</h3>
                         <p>Practica con examen de admisión universitaria</p>
                     </div>
                     <div class="card" onclick="showPage('results-page')">
-                        <h3>📊 Mis Resultados</h3>
+                        <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>Mis Resultados</h3>
                         <p>Revisa tus resultados de exámenes anteriores</p>
                     </div>
                 </div>
@@ -92,16 +107,16 @@
         <!-- Psychological Chat Page -->
         <div id="psychological-chat-page" class="page">
             <nav class="navbar">
-                <button onclick="showPage('dashboard-page')">← Volver</button>
+                <button class="btn-back" onclick="showPage('dashboard-page')"><i class="fas fa-arrow-left"></i> <span class="btn-text">Volver</span></button>
                 <h1>Chat Psicológico</h1>
-                <button onclick="logout()">Cerrar Sesión</button>
+                <button onclick="logout()"><i class="fas fa-sign-out-alt"></i> <span class="btn-text">Cerrar Sesión</span></button>
             </nav>
             
             <div class="chat-container">
                 <div id="psych-messages" class="messages-container"></div>
                 <div class="input-container">
                     <textarea id="psych-input" placeholder="Escribe tu mensaje..." rows="3" aria-label="Mensaje de chat psicológico"></textarea>
-                    <button onclick="sendMessage('psychological')">Enviar</button>
+                    <button class="btn-send" onclick="sendMessage('psychological')" aria-label="Enviar mensaje"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
         </div>
@@ -109,16 +124,16 @@
         <!-- Vocational Chat Page -->
         <div id="vocational-chat-page" class="page">
             <nav class="navbar">
-                <button onclick="showPage('dashboard-page')">← Volver</button>
+                <button class="btn-back" onclick="showPage('dashboard-page')"><i class="fas fa-arrow-left"></i> <span class="btn-text">Volver</span></button>
                 <h1>Orientación Vocacional</h1>
-                <button onclick="logout()">Cerrar Sesión</button>
+                <button onclick="logout()"><i class="fas fa-sign-out-alt"></i> <span class="btn-text">Cerrar Sesión</span></button>
             </nav>
             
             <div class="chat-container">
                 <div id="vocational-messages" class="messages-container"></div>
                 <div class="input-container">
                     <textarea id="vocational-input" placeholder="Escribe tu mensaje..." rows="3" aria-label="Mensaje de orientación vocacional"></textarea>
-                    <button onclick="sendMessage('vocational')">Enviar</button>
+                    <button class="btn-send" onclick="sendMessage('vocational')" aria-label="Enviar mensaje"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
         </div>
@@ -126,9 +141,9 @@
         <!-- Exam Page -->
         <div id="exam-page" class="page">
             <nav class="navbar">
-                <button onclick="showPage('dashboard-page')">← Volver</button>
+                <button class="btn-back" onclick="showPage('dashboard-page')"><i class="fas fa-arrow-left"></i> <span class="btn-text">Volver</span></button>
                 <h1>Examen de Simulación</h1>
-                <button onclick="logout()">Cerrar Sesión</button>
+                <button onclick="logout()"><i class="fas fa-sign-out-alt"></i> <span class="btn-text">Cerrar Sesión</span></button>
             </nav>
             
             <div class="exam-container">
@@ -152,9 +167,9 @@
         <!-- Results Page -->
         <div id="results-page" class="page">
             <nav class="navbar">
-                <button onclick="showPage('dashboard-page')">← Volver</button>
+                <button class="btn-back" onclick="showPage('dashboard-page')"><i class="fas fa-arrow-left"></i> <span class="btn-text">Volver</span></button>
                 <h1>Mis Resultados</h1>
-                <button onclick="logout()">Cerrar Sesión</button>
+                <button onclick="logout()"><i class="fas fa-sign-out-alt"></i> <span class="btn-text">Cerrar Sesión</span></button>
             </nav>
             
             <div class="results-container">
